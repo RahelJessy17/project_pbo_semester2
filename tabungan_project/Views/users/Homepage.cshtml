@@ -24,6 +24,7 @@
         </div>
     </div>
 </div>
+
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -70,12 +71,7 @@
             </div>
         </div>
     </div>
-
 }
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
-
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

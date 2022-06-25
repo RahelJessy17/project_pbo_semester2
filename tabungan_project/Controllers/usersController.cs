@@ -11,6 +11,7 @@ using tabungan_project.Models;
 
 namespace tabungan_project.Controllers
 {
+
     public class usersController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -49,6 +50,20 @@ namespace tabungan_project.Controllers
         // POST: users/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Homepage([Bind(Include = "id_user,nama_user,nomor_hp,passwords,id_status")] users users)
+        {
+            if (ModelState.IsValid)
+            {
+                db.usersObject.Add(users);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(users);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id_user,nama_user,nomor_hp,passwords,id_status")] users users)
