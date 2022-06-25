@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="detail_tabungan" directorySegmentName="seg_0" id="4C175DE7-68FF-F5AB-084E-DA1C686B9AD7">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:44:02 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<sourcePk>1723EB05-BE8F-5334-7D05-B5201677309E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>terperinci</nameOnSource>
+<nameOnTarget>memperinci</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>72FDCB8F-E7A6-53AA-6BE3-7E497980F0AF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A510C25F-A44C-E77C-741B-3F1F449884D0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0524CF4-6638-BBB1-8F73-DB9371EB7B5A" name="detail_tabungan">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>A510C25F-A44C-E77C-741B-3F1F449884D0</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nomor_seri" id="E1B036D8-FEDA-651B-BB22-8BDFC7777B7A">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>E0392C22-D5C9-4460-3658-53E091F2EBF6</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="BAFB48E5-E017-6D69-BE8B-68FD17DF6946">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>B7860C50-7F29-A40F-6D04-06C542B9BEBD</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tabungan_id_tabungan" id="D609985F-3225-8D51-B7AA-EE8C87E1AF78">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>39A86495-17CB-BF65-1FE4-3D6D6E3FF3D8</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD5D2EDB-102A-B2AC-DBD8-EA271F2B4B82" referredColumn="3A176DA0-1B2A-8C14-10AB-6FB6A832A297"/>
+</associations>
+</Column>
+<Column name="item_id_item" id="C08C4B0A-096D-F40F-BFA7-0139CA24773C">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>B0CB8246-F702-80E9-22D3-D00A3490D623</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF2EA243-D2D9-557D-4C2D-2B51F9776CDD" referredColumn="EC4CB3FC-EA47-0F1B-F529-F47BD4CB18AD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57122DA4-8346-6C9C-6522-E106F06ED3F8" name="detail_tabungan_PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E1B036D8-FEDA-651B-BB22-8BDFC7777B7A"/>
+<colUsage columnID="D609985F-3225-8D51-B7AA-EE8C87E1AF78"/>
+<colUsage columnID="C08C4B0A-096D-F40F-BFA7-0139CA24773C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="460F1200-78CC-53E0-2C17-387C255B8D71" name="detail_tabungan_nomor_seri_UN">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>9D4BD92D-9AC5-A5E4-FA6F-7713AB207A98</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1B036D8-FEDA-651B-BB22-8BDFC7777B7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C05528F-3B84-9F98-36A0-3A0676825B8D" name="detail_tabungan_tabungan_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>4C175DE7-68FF-F5AB-084E-DA1C686B9AD7</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D609985F-3225-8D51-B7AA-EE8C87E1AF78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FC4285A-8863-7210-9E92-F3A05B62BDAC" name="detail_tabungan_item_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>1770180A-78D7-617D-FC08-FC0D63798F95</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C08C4B0A-096D-F40F-BFA7-0139CA24773C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

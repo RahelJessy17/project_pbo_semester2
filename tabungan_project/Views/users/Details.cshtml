@@ -1,0 +1,52 @@
+﻿@model tabungan_project.Models.users
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="color: #BEA42E"><b><img src="~/fonts/img/users.png" width="4%" /> DATA USERS</b></h2>
+<h4 style="color: #BEA42E">Detail Data User</h4>
+<hr />
+<br />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nama_user)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nama_user)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomor_hp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomor_hp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passwords)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passwords)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_status)
+        </dd>
+
+    </dl>
+</div>
+<br />
+<p style="color: #BEA42E">
+    @Html.ActionLink("Ubah", "Edit", new { id = Model.id_user }, new { @class = "btn btn-warning" })    
+    @Html.ActionLink("List", "Index", new { id = Model.id_user }, new { @class = "btn btn-info" })
+</p>

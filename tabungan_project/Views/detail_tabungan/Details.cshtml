@@ -1,0 +1,48 @@
+﻿@model tabungan_project.Models.detail_tabungan
+
+@{
+    ViewBag.Title = "Details";
+}
+<h2 style="color: #48120E" font-family="montserrat"><b><img src="~/fonts/img/Document.png" width="3%" />DETAIL TABUNGAN</b></h2>
+<h4 style="color:#48120E"> Detail Tabungan</h4>
+<hr />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomor_seri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomor_seri)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_tabungan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_tabungan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_item)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_item)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Ubah", "Edit", new { id = Model.nomor_seri }, new { @class = "btn btn-warning" })
+    @Html.ActionLink("List", "Index", new { id = Model.nomor_seri }, new { @class = "btn btn-info" })
+</div>

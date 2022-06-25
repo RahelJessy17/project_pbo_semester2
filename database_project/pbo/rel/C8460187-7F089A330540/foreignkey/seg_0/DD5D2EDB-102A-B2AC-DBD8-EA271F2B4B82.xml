@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD5D2EDB-102A-B2AC-DBD8-EA271F2B4B82" containerWithKeyObject="C0524CF4-6638-BBB1-8F73-DB9371EB7B5A" localFKIndex="6C05528F-3B84-9F98-36A0-3A0676825B8D" name="detail_tabungan_tabungan_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>4C175DE7-68FF-F5AB-084E-DA1C686B9AD7</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<referredTableLongName>tabungan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F0C850C7-969A-9036-FAA6-4B0DDE353E3C</referredTableID>
+<keyObject>8CB30931-B0A1-4AC9-1E41-D32BECA457E5</keyObject>
+<referredKeyID>8CB30931-B0A1-4AC9-1E41-D32BECA457E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tabungan</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

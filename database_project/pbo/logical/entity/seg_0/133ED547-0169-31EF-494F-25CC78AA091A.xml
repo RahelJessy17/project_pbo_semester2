@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="133ED547-0169-31EF-494F-25CC78AA091A" name="users">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:19:18 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_user" id="2F6FE97B-6AED-933E-9A99-F18FA0F21A66">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:22:08 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nama_user" id="A6E3EBEA-3AD7-8A8D-DF6D-BACCA0728AC0">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:24:36 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nomor_hp" id="619B7B7C-612C-3B3D-A600-B5BFFFB1CBAF">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:25:06 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_status" id="87281AC8-A1E3-188C-3CA7-5122ADFA9762">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:38:53 UTC</createdTime>
+<generatorID>E00BD115-5C81-6E18-B6F2-30F7E5999728</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<referedAttribute>85CAACCE-745F-40E0-B91A-603D16FC3C7A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="814F2CCC-B63D-A0BE-D857-E1D1E375B9BD" name="user PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:24:32 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2F6FE97B-6AED-933E-9A99-F18FA0F21A66</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

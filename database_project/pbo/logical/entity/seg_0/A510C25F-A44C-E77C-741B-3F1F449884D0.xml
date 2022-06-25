@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A510C25F-A44C-E77C-741B-3F1F449884D0" name="detail_tabungan">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:36:26 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nomor_seri" id="E0392C22-D5C9-4460-3658-53E091F2EBF6">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:36:43 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity" id="B7860C50-7F29-A40F-6D04-06C542B9BEBD">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:37:10 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tabungan" id="39A86495-17CB-BF65-1FE4-3D6D6E3FF3D8">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:44:02 UTC</createdTime>
+<generatorID>4C175DE7-68FF-F5AB-084E-DA1C686B9AD7</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<referedAttribute>7821B582-9D45-B2B0-09F3-21BF16FC7A37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_item" id="B0CB8246-F702-80E9-22D3-D00A3490D623">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:47:09 UTC</createdTime>
+<generatorID>1770180A-78D7-617D-FC08-FC0D63798F95</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<referedAttribute>AA89D905-2A4F-0CFB-F3BB-BE3B81B26036</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9D4BD92D-9AC5-A5E4-FA6F-7713AB207A98" name="detail_tabungan PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:37:04 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0392C22-D5C9-4460-3658-53E091F2EBF6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

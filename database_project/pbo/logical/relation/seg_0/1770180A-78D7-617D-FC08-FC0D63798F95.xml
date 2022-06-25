@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="1770180A-78D7-617D-FC08-FC0D63798F95">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:47:09 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<engineerTo>
+<item key="C8460187-B650-471D-1329-7F089A330540" value="true"/>
+</engineerTo>
+<sourcePk>154DD5C7-F7B3-BA61-9B07-2BAE98539325</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>terperinci</nameOnSource>
+<nameOnTarget>memperinci</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BB9DA999-6C72-F4B2-F66B-16FA6498A255</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A510C25F-A44C-E77C-741B-3F1F449884D0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

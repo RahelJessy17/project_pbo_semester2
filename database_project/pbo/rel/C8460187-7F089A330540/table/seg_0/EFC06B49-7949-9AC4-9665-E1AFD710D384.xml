@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFC06B49-7949-9AC4-9665-E1AFD710D384" name="item">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>BB9DA999-6C72-F4B2-F66B-16FA6498A255</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_item" id="EC4CB3FC-EA47-0F1B-F529-F47BD4CB18AD">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>AA89D905-2A4F-0CFB-F3BB-BE3B81B26036</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nama_item" id="217AA4DE-9E2F-0C76-BAFB-AA5553A7A193">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>97D8332D-B2E4-7AB7-61E5-4BFCDEA85637</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="harga" id="25370EE7-5F91-6168-A774-BA71E359049C">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>F17C0EE5-B929-1AEC-E73E-C82DA6612FF0</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_id_category" id="A9C9D945-B6AD-F52D-C8F6-98F5AB856A33">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>567E02C9-D743-59FC-97B4-63C3F975C2AC</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DF96563-960A-37BF-7B13-48C45E8095A6" referredColumn="F98377D0-1405-AA94-97CC-3EC1E31C535E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCDE3977-FDE6-466A-CE76-92216B5A2761" name="item_PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EC4CB3FC-EA47-0F1B-F529-F47BD4CB18AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0319193-CBF8-9E51-F489-E47403D7EB2B" name="item_id_item_UN">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>154DD5C7-F7B3-BA61-9B07-2BAE98539325</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC4CB3FC-EA47-0F1B-F529-F47BD4CB18AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCA3D154-76F1-90A8-BAFC-B711A239D885" name="item_category_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>07A4EBB2-453F-3F4D-1AB8-E3FD23AB389C</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9C9D945-B6AD-F52D-C8F6-98F5AB856A33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

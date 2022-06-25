@@ -1,0 +1,42 @@
+﻿@model tabungan_project.Models.item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="color: #AB3E16"><b><img src="~/fonts/img/item.png" width="4%" />ITEM</b></h2>
+<h4 style="color: #AB3E16">Detail Item</h4>
+<hr />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nama_item)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nama_item)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.harga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.harga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_category)
+        </dd>
+
+    </dl>
+</div>
+<p style="color: #AB3E16">
+    @Html.ActionLink("Ubah", "Edit", new { id = Model.id_item }, new { @class = "btn btn-warning" })
+    @Html.ActionLink("List", "Index", new { id = Model.id_item }, new { @class = "btn btn-info" })
+</p>

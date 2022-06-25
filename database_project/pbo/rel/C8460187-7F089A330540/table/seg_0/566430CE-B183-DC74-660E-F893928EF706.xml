@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="566430CE-B183-DC74-660E-F893928EF706" name="users">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>133ED547-0169-31EF-494F-25CC78AA091A</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<ordsAlias>user</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_user" id="F40FEE99-C4AB-CE8D-6B5F-B95066C20945">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>2F6FE97B-6AED-933E-9A99-F18FA0F21A66</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nama_user" id="DACA18E8-0127-D3C5-CBD6-427459D07719">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>A6E3EBEA-3AD7-8A8D-DF6D-BACCA0728AC0</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomor_hp" id="04A79AC8-7A8E-C37E-8F54-7074705A75F2">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>619B7B7C-612C-3B3D-A600-B5BFFFB1CBAF</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_id_status" id="74AE9C6C-0352-D78F-9A73-CB0A29D11876">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>87281AC8-A1E3-188C-3CA7-5122ADFA9762</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E61061F2-FE14-44A7-28E9-DA336CCF953C" referredColumn="D3A1E070-93DE-06A3-9115-9B5D8D7C8904"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DED67BF3-B627-3750-9AC9-CA5618B8D570" name="user_PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F40FEE99-C4AB-CE8D-6B5F-B95066C20945"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2047300A-A28C-020A-3F6B-4FD5B26DE721" name="user_id_user_UN">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>814F2CCC-B63D-A0BE-D857-E1D1E375B9BD</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F40FEE99-C4AB-CE8D-6B5F-B95066C20945"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6405221E-7321-13D0-82F9-9B7C53112B02" name="user_status_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>E00BD115-5C81-6E18-B6F2-30F7E5999728</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74AE9C6C-0352-D78F-9A73-CB0A29D11876"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

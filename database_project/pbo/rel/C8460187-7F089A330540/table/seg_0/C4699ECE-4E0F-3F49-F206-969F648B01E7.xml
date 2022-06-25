@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4699ECE-4E0F-3F49-F206-969F648B01E7" name="category">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>16A4AEDF-4760-E9F4-9A3B-768916665550</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_category" id="F98377D0-1405-AA94-97CC-3EC1E31C535E">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>F093011C-2EF9-3380-E6DB-D9D708AC840F</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jenis_kebutuhan" id="AC4083F8-36E0-E25F-0FEF-F700AFD41280">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>4209EEB9-FD61-47A7-075D-E97B7233C1FF</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3659057A-C930-7610-BE68-36798575F783" name="category_PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F98377D0-1405-AA94-97CC-3EC1E31C535E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B4028DE-8736-5A76-18AB-637DE2E17D46" name="category_id_category_UN">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>0DEC9DD2-D7E7-9E21-0B52-5265AB5C26F5</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F98377D0-1405-AA94-97CC-3EC1E31C535E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

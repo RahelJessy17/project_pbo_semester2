@@ -1,0 +1,26 @@
+﻿@model tabungan_project.Models.status
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="color: #EFAA52"><b><img src="~/fonts/img/status.png" width="3%" />STATUS</b></h2>
+<h4 style="color: #EFAA52">Detail Status</h4>
+<hr />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nama_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nama_status)
+        </dd>
+
+    </dl>
+</div>
+<p style="color: #EFAA52">
+    @Html.ActionLink("Ubah", "Edit", new { id = Model.id_status }, new { @class = "btn btn-warning" }) |
+    @Html.ActionLink("List", "Index", new { id = Model.id_status }, new { @class = "btn btn-info" })
+</p>

@@ -1,0 +1,31 @@
+﻿@model tabungan_project.Models.category
+
+@{
+    ViewBag.Title = "Details";
+}
+<h2 style="color: #FFC300"><b>CATEGORI</b></h2>
+
+<div>
+    <h4 style="color: #FFC300">Rincian Categori</h4>
+    <br />
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.jenis_kebutuhan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jenis_kebutuhan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <br />
+    <div style="color: #FFC300">
+        <h4>
+            @Html.ActionLink("Ubah", "Edit", new { id = Model.id_category }, new { @class = "btn btn-warning" }) 
+            @Html.ActionLink("List", "Index", new { id = Model.id_category }, new { @class = "btn btn-info" })
+        </h4>
+    </div>
+</p>

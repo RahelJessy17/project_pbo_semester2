@@ -1,0 +1,39 @@
+﻿@model IEnumerable<tabungan_project.Models.category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="color: #FFC300"><b><img src="~/fonts/img/categori.png" width="3%" />CATEGORI</b></h2>
+
+<p>
+    Apakah anda ingin @Html.ActionLink("buat baru", "Create", new { @area = " " }) categori ???
+</p>
+<table class="table">
+    <style>
+        tr:nth-child(even) {
+            background-color: #FEFFA1;
+        }
+    </style>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.jenis_kebutuhan)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.jenis_kebutuhan)
+            </td>
+            <td>
+                @Html.ActionLink("Ubah", "Edit", new { id = item.id_category }, new { @class = "btn btn-warning" }) 
+                @Html.ActionLink("Details", "Details", new { id = item.id_category }, new { @class = "btn btn-info" })
+                @Html.ActionLink("Hapus", "Delete", new { id = item.id_category }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,114 @@
+drop table category
+drop table detail_tabungan
+drop table item
+drop table tabungan
+drop table status
+drop table users
+
+
+--category
+CREATE TABLE category (
+    id_category smallserial primary key,
+    jenis_kebutuhan VARCHAR (20) NOT NULL
+);
+
+insert into category (jenis_kebutuhan)
+values ('primer'),
+		('sekunder'),
+		('tersier')
+		
+select*from category
+
+--item
+CREATE TABLE item (
+    id_item              serial primary key,
+    nama_item            VARCHAR(20) NOT NULL,
+    harga                int (50) NOT NULL,
+    id_category CHAR(5) NOT NULL
+);
+
+insert into item(nama_item, harga, id_category)
+values
+('beras 5kg', 50000, 1),
+('sepatu adidas', 100000, 2),
+('laptop', 5000000, 3)
+
+select*from item
+
+--status
+CREATE TABLE status (
+    id_status  smallserial primary key,
+    nama_status VARCHAR(20) NOT NULL
+);
+
+insert into status(nama_status)
+values ('siswa'),('mahasiswa'),('bekerja')
+
+select * from status
+
+--users
+CREATE TABLE users (
+    id_user smallserial PRIMARY KEY,
+    nama_user VARCHAR (20) NOT NULL,
+    nomor_hp VARCHAR NOT NULL,
+	passwords VARCHAR NOT NULL,
+	id_status int,
+    constraint fk_status
+		foreign key (id_status)
+			references status(id_status)
+);
+
+insert into users(nama_user, nomor_hp, passwords, id_status)
+values 
+('rahel jessy',082245461777,'rahel123',2),
+('eka prasetya',082225656789,'Prasetya123',2),
+('krisna pratama',082234456678,'Pratama123',3)
+
+select*from users
+
+--tabungan
+CREATE TABLE tabungan (
+    id_tabungan      smallserial primary key,
+    tanggal_mulai    DATE NOT NULL,
+    tanggal_berakhir DATE NOT NULL,
+	id_user int,
+	constraint fk_user
+		foreign key (id_user)
+			references users(id_user)
+);
+
+insert into tabungan(tanggal_mulai, tanggal_berakhir, id_user)
+values 
+('2022-06-16', '2022-08-16',1),
+('2022-08-19','2022-10-19',2),
+('2022-12-01', '2023-12-01',3)
+
+select*from tabungan
+
+-- detail_tabungan
+CREATE TABLE detail_tabungan (
+    nomor_seri int,
+    quantity int NOT NULL,
+	id_tabungan int,
+	constraint fk_tabungan
+		foreign key (id_tabungan)
+			references tabungan(id_tabungan),
+	id_item int,
+	constraint fk_item
+		foreign key (id_item)
+			references item(id_item)
+);
+
+ALTER TABLE detail_tabungan
+ADD PRIMARY KEY (nomor_seri, id_tabungan, id_item );
+
+insert into detail_tabungan (nomor_seri, quantity, id_tabungan, id_item)
+values 
+(11,2,1,1),
+(21,1,2,1),
+(33,1,3,3)
+
+select * from detail_tabungan
+
+
+

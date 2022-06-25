@@ -1,0 +1,58 @@
+﻿@model IEnumerable<tabungan_project.Models.tabungan>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2 style="color: #60412B"><b><img src="~/fonts/img/brangkas.png" width="4%" />TABUNGAN</b></h2>
+<h3>List Tabungan</h3>
+<br />
+
+<p>
+    Apakah anda ingin @Html.ActionLink("buat baru", "Create", new {@area = ""}) tabungan ???
+</p>
+<table class="table">
+    <style>
+        tr:nth-child(even) {
+            background-color: #E7CC8F;
+        }
+    </style>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_tabungan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tanggal_mulai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tanggal_berakhir)
+        </th>
+        <th>
+            @Html.ActionLink("id_users", "index", "users")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_tabungan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tanggal_mulai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tanggal_berakhir)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_user)
+            </td>
+            <td>
+                @Html.ActionLink("Ubah", "Edit", new { id = item.id_tabungan }, new { @class = "btn btn-warning" }) 
+                @Html.ActionLink("Details", "Details", new { id = item.id_tabungan }, new { @class = "btn btn-info" })
+                @Html.ActionLink("Hapus", "Delete", new { id = item.id_tabungan }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

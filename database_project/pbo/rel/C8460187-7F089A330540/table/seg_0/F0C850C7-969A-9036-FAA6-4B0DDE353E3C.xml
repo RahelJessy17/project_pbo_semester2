@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C850C7-969A-9036-FAA6-4B0DDE353E3C" name="tabungan">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>72FDCB8F-E7A6-53AA-6BE3-7E497980F0AF</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tabungan" id="3A176DA0-1B2A-8C14-10AB-6FB6A832A297">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>7821B582-9D45-B2B0-09F3-21BF16FC7A37</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanggal_mulai" id="F584A315-69C2-8CC1-BBC1-2BF5A66B136E">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>198C3C67-A781-F64A-DDF5-D02996087F33</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanggal_berakhir" id="58E75B12-1DB2-E90D-33E9-2850C7A50576">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>A9A91915-A33B-3276-1D73-D8196751F956</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id_user" id="4C4459CA-28D4-2549-C8D2-DC7AF4A34F0E">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>42E777BA-6909-285D-7E25-54B6BFEEC8F5</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30A29853-8CC4-3688-E979-A8520B3E3C99" referredColumn="F40FEE99-C4AB-CE8D-6B5F-B95066C20945"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DCE8FAF-B9E1-3410-0E82-608105EEDB8A" name="tabungan_PK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<ownerDesignName>pbo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="3A176DA0-1B2A-8C14-10AB-6FB6A832A297"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CB30931-B0A1-4AC9-1E41-D32BECA457E5" name="tabungan_id_tabungan_UN">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>1723EB05-BE8F-5334-7D05-B5201677309E</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A176DA0-1B2A-8C14-10AB-6FB6A832A297"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B35019A-6399-4BFD-4122-9CCD3BE431B1" name="tabungan_user_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>5EBB681E-141D-B72E-9823-AC8D9D3AF85F</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C4459CA-28D4-2549-C8D2-DC7AF4A34F0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

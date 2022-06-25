@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF2EA243-D2D9-557D-4C2D-2B51F9776CDD" containerWithKeyObject="C0524CF4-6638-BBB1-8F73-DB9371EB7B5A" localFKIndex="4FC4285A-8863-7210-9E92-F3A05B62BDAC" name="detail_tabungan_item_FK">
+<createdBy>acer</createdBy>
+<createdTime>2022-06-14 14:51:57 UTC</createdTime>
+<generatorID>1770180A-78D7-617D-FC08-FC0D63798F95</generatorID>
+<ownerDesignName>pbo</ownerDesignName>
+<referredTableLongName>item</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EFC06B49-7949-9AC4-9665-E1AFD710D384</referredTableID>
+<keyObject>F0319193-CBF8-9E51-F489-E47403D7EB2B</keyObject>
+<referredKeyID>F0319193-CBF8-9E51-F489-E47403D7EB2B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_item</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

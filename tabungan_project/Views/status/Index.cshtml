@@ -1,0 +1,47 @@
+﻿@model IEnumerable<tabungan_project.Models.status>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="color: #EFAA52"><b><img src="~/fonts/img/status.png" width="3%" />STATUS USERS</b></h2>
+<br />
+
+<p >
+    Apakah anda ingin @Html.ActionLink("buat baru", "Create", new { @area = " " }) status users ???
+</p>
+
+<table class="table">
+    <style>
+        tr:nth-child(even) {
+            background-color: #F9FE8B;
+        }
+    </style>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nama_status)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nama_status)
+            </td>
+            <td>
+                @Html.ActionLink("Ubah", "Edit", new { id = item.id_status }, new { @class = "btn btn-warning" }) 
+                @Html.ActionLink("Details", "Details", new { id = item.id_status }, new { @class = "btn btn-info" }) 
+                @Html.ActionLink("Hapus", "Delete", new { id = item.id_status }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

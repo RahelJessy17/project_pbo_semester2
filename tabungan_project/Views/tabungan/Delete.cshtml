@@ -1,0 +1,52 @@
+﻿@model tabungan_project.Models.tabungan
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 style="color: #60412B"><b><img src="~/fonts/img/brangkas.png" width="4%" />TABUNGAN</b></h2>
+<h4 style="color: #60412B">Hapus Tabungan</h4>
+<hr />
+<h5 style="color: #60412B">Apakah kamu yakin ingin menghapus tabungan ini?</h5>
+<br />
+
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.tanggal_mulai)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.tanggal_mulai)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.tanggal_berakhir)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.tanggal_berakhir)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.id_user)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.id_user)
+    </dd>
+
+</dl>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-actions no-color">
+        <div>
+            <input type="submit" value="Hapus" class="btn btn-danger" /> 
+            @Html.ActionLink("List", "Index", new { id = Model.id_tabungan }, new { @class = "btn btn-info" })
+        </div>
+    </div>
+}
+
+
+

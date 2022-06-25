@@ -1,0 +1,56 @@
+﻿@model tabungan_project.Models.detail_tabungan
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 style="color: #48120E" font-family="montserrat"><b><img src="~/fonts/img/Document.png" width="3%" />DETAIL TABUNGAN</b></h2>
+<h4 style="color:#48120E">Hapus Detail Tabungan</h4>
+<hr />
+<h5>Apakah kamu yakin ingin menghapus detail tabungan ini?</h5>
+<br />
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomor_seri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomor_seri)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_tabungan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_tabungan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_item)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_item)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <br />
+        <div class="form-actions no-color">
+            <input type="submit" value="Hapus" class="btn btn-danger" /> 
+            @Html.ActionLink("List", "Index", new { id = Model.nomor_seri }, new { @class = "btn btn-info" })
+        </div>
+    }
+</div>
